@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/social-media-project/static/css/main.5ed92d13.chunk.css",
-    "main.js": "/social-media-project/static/js/main.df298c2d.chunk.js",
-    "main.js.map": "/social-media-project/static/js/main.df298c2d.chunk.js.map",
-    "runtime-main.js": "/social-media-project/static/js/runtime-main.10936e57.js",
-    "runtime-main.js.map": "/social-media-project/static/js/runtime-main.10936e57.js.map",
-    "static/js/2.cb0afea3.chunk.js": "/social-media-project/static/js/2.cb0afea3.chunk.js",
-    "static/js/2.cb0afea3.chunk.js.map": "/social-media-project/static/js/2.cb0afea3.chunk.js.map",
-    "static/js/3.c170ae42.chunk.js": "/social-media-project/static/js/3.c170ae42.chunk.js",
-    "static/js/3.c170ae42.chunk.js.map": "/social-media-project/static/js/3.c170ae42.chunk.js.map",
+    "main.css": "/social-media-project/static/css/main.20f40c1c.chunk.css",
+    "main.js": "/social-media-project/static/js/main.a9db3ec1.chunk.js",
+    "main.js.map": "/social-media-project/static/js/main.a9db3ec1.chunk.js.map",
+    "runtime-main.js": "/social-media-project/static/js/runtime-main.fa91f55e.js",
+    "runtime-main.js.map": "/social-media-project/static/js/runtime-main.fa91f55e.js.map",
+    "static/js/2.2f745a2a.chunk.js": "/social-media-project/static/js/2.2f745a2a.chunk.js",
+    "static/js/2.2f745a2a.chunk.js.map": "/social-media-project/static/js/2.2f745a2a.chunk.js.map",
+    "static/js/3.af54ac51.chunk.js": "/social-media-project/static/js/3.af54ac51.chunk.js",
+    "static/js/3.af54ac51.chunk.js.map": "/social-media-project/static/js/3.af54ac51.chunk.js.map",
     "index.html": "/social-media-project/index.html",
-    "static/css/main.5ed92d13.chunk.css.map": "/social-media-project/static/css/main.5ed92d13.chunk.css.map",
-    "static/js/2.cb0afea3.chunk.js.LICENSE.txt": "/social-media-project/static/js/2.cb0afea3.chunk.js.LICENSE.txt"
+    "static/css/main.20f40c1c.chunk.css.map": "/social-media-project/static/css/main.20f40c1c.chunk.css.map",
+    "static/js/2.2f745a2a.chunk.js.LICENSE.txt": "/social-media-project/static/js/2.2f745a2a.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.10936e57.js",
-    "static/js/2.cb0afea3.chunk.js",
-    "static/css/main.5ed92d13.chunk.css",
-    "static/js/main.df298c2d.chunk.js"
+    "static/js/runtime-main.fa91f55e.js",
+    "static/js/2.2f745a2a.chunk.js",
+    "static/css/main.20f40c1c.chunk.css",
+    "static/js/main.a9db3ec1.chunk.js"
   ]
 }
