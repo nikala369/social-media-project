@@ -1,4 +1,30 @@
+.dialogs {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 10fr;
+      grid-template-columns: 2fr 10fr;
+  background-color: antiquewhite;
+}
+
+.dialogsItem {
+  padding: 20px;
+  font-size: 17px;
+}
+
+.dialogsItem .active {
+  color: red;
+  font-size: 20px;
+}
+
+.dialog {
+  padding: 10px;
+}
+
 .messages {
-  color: lightgrey;
+  padding: 10px;
+  font-weight: 600;
+  font-size: 17px;
+  letter-spacing: 1px;
+  color: #2c2c2b;
 }
 /*# sourceMappingURL=Messages.module.css.map */
