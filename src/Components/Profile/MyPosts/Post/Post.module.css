@@ -1,0 +1,9 @@
+.post {
+  font-size: 17px;
+}
+
+.post img {
+  width: 35px !important;
+  border-radius: 50%;
+}
+/*# sourceMappingURL=Post.module.css.map */

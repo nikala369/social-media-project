@@ -1,0 +1,22 @@
+.mainNavbar {
+  grid-area: nav;
+  background-color: blue;
+  ul {
+          list-style-type: none;
+          padding: 5px;
+          text-align: center;
+  }
+  li {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+  }
+  .navList {
+    text-decoration: none;
+    color: white;
+  }
+  .active {
+    color: gold;
+  }
+
+}

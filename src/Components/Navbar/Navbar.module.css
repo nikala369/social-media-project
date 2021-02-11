@@ -1,0 +1,26 @@
+.mainNavbar {
+  grid-area: nav;
+  background-color: blue;
+}
+
+.mainNavbar ul {
+  list-style-type: none;
+  padding: 5px;
+  text-align: center;
+}
+
+.mainNavbar li {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+
+.mainNavbar .navList {
+  text-decoration: none;
+  color: white;
+}
+
+.mainNavbar .active {
+  color: gold;
+}
+/*# sourceMappingURL=Navbar.module.css.map */

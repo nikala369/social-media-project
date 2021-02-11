@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,KAAK,CAAC;EACL,SAAS,EAAE,IAAI;CAKf;;AAND,AAEC,KAFI,CAEJ,GAAG,CAAC;EACA,KAAK,EAAE,eAAe;EACtB,aAAa,EAAE,GAAG;CACrB",
+    "sources": [
+        "Post.module.scss"
+    ],
+    "names": [],
+    "file": "Post.module.css"
+}

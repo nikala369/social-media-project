@@ -1,0 +1,9 @@
+.mainContent {
+  grid-area: content;
+  background-color: antiquewhite;
+}
+
+.mainContent img {
+  width: 100%;
+}
+/*# sourceMappingURL=Profile.module.css.map */
