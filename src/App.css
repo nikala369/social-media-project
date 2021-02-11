@@ -1,0 +1,11 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.app-wrapper {
+  display: -ms-grid;
+  display: grid;
+  color: blue;
+}
+/*# sourceMappingURL=App.css.map */
