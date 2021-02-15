@@ -3,7 +3,7 @@
   display: grid;
   -ms-grid-columns: 2fr 10fr;
       grid-template-columns: 2fr 10fr;
-  background-color: antiquewhite;
+  background-color: #e5ebe5;
 }
 
 .dialogsItem {
@@ -26,5 +26,11 @@
   font-size: 17px;
   letter-spacing: 1px;
   color: #2c2c2b;
+}
+
+.sendMessage {
+  position: relative;
+  left: 200px;
+  bottom: 50px;
 }
 /*# sourceMappingURL=Messages.module.css.map */

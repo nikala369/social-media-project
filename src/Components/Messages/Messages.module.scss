@@ -2,7 +2,7 @@
 .dialogs {
     display: grid;
     grid-template-columns: 2fr 10fr;
-    background-color: antiquewhite;
+    background-color: rgb(229, 235, 229);
 }
 .dialogsItem{
   padding: 20px;
@@ -22,4 +22,9 @@
     font-size: 17px;
     letter-spacing: 1px;
     color: rgb(44, 44, 43);
+}
+.sendMessage {
+    position: relative;
+    left: 200px;
+    bottom: 50px;
 }
