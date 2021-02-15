@@ -5,14 +5,14 @@ import Messages from './Components/Messages/Messages';
 import style from './App.module.scss';
 import { Route, Switch, BrowserRouter } from "react-router-dom";
 
-function App() {
+function App(props) {
   return (
     <BrowserRouter>
       <div className={style.appWrapper}>
         <Header />
         <Navbar />
-        <Route path="/Profile" component={Profile} />
-        <Route path="/Dialogs" component={Messages} />
+        <Route path="/Profile" render={() => <Profile postData={props.postData}/>} />
+        <Route path="/Dialogs" render={() => <Messages  dialogsData={props.dialogsData} messagesData={props.messagesData}/>} />
       </div>
     </BrowserRouter>
   );
