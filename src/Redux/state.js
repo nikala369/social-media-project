@@ -11,14 +11,17 @@ let state = {
          { id: 3, message: 'Hello From America', likeCount: "55" }
 
       ],
-      newPostText: 'it-pro-nika',
+      newPostText: 'What\'s happening?',
    },
+   
    messagesPage: {
       messagesData: [
          { id: 1, message: 'Hi' },
          { id: 2, message: 'How are you?' },
-         { id: 1, message: 'Wazzaapp' },
+         { id: 3, message: 'Wazzaapp' },
       ],
+      newMessage: 'Good work',
+
       dialogsData: [
          { id: 1, name: 'David' },
          { id: 2, name: 'Nika' },
@@ -33,10 +36,10 @@ let state = {
    sidebar: {}
 
 }
-
+// ADDing post and update post
 export let addPost = () => {
    let newPost = {
-      id: 5,
+      id: 4,
       message: state.profilePage.newPostText,
       likeCount: 1,
    };
@@ -49,6 +52,18 @@ export let updateNewPostText = (newText) => {
    state.profilePage.newPostText = newText;
    rerenderEntireTree(state);
 }
+
+// Sending message.
+export let sendMessage = () => {
+   let newMessage = {
+      id: 4,
+      message: state.messagesPage.newMessage,
+   }
+   state.messagesPage.messagesData.push(newMessage);
+   state.messagesPage.newMessage = '';
+   rerenderEntireTree(state);
+}
+
 
 
 

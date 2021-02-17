@@ -1,7 +1,6 @@
 .mainHeader {
   text-decoration: none;
   grid-area: header;
-  background-color: green;
 }
 
 .mainHeader img {

@@ -1,23 +1,23 @@
 .mainNavbar {
   grid-area: nav;
-  background-color: blue;
 }
 
 .mainNavbar ul {
   list-style-type: none;
   padding: 5px;
-  text-align: center;
+  display: block;
+  float: left;
 }
 
 .mainNavbar li {
   text-decoration: none;
-  color: white;
   padding: 10px;
+  display: block;
 }
 
 .mainNavbar .navList {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
 .mainNavbar .active {

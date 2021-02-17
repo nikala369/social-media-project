@@ -5,6 +5,7 @@ const MessagesDiv = (props) => {
 
     return (
         <div className={style.dialog}>{props.message}</div>
+
     );
 }
 

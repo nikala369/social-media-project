@@ -23,7 +23,9 @@ function App(props) {
           path="/Dialogs"
           render={() => (
             <Messages
+              profilePage={props.state.profilePage}
               state={props.state.messagesPage}
+              messagesPage={props.state.messagesPage}
             />
           )}
         />
