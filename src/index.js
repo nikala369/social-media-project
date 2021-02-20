@@ -1,18 +1,21 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import store from './Redux/state';
-import reportWebVitals from './reportWebVitals';
-import { BrowserRouter } from 'react-router-dom';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App";
+import store from "./Redux/state";
+import reportWebVitals from "./reportWebVitals";
+import { BrowserRouter } from "react-router-dom";
 
-
-  let rerenderEntireTree = (state) => {
+let rerenderEntireTree = (state) => {
   ReactDOM.render(
     <BrowserRouter>
-      <App state={state} dispatch={store.dispatch.bind(store)} />
-    </BrowserRouter>, document.getElementById('root'));
-}
+      <React.StrictMode>
+        <App state={state} dispatch={store.dispatch.bind(store)} />
+      </React.StrictMode>
+    </BrowserRouter>,
+    document.getElementById("root")
+  );
+};
 
 rerenderEntireTree(store.getState());
 

@@ -14,7 +14,7 @@ let store = {
       messagesData: [
         { id: 1, message: "Hi" },
         { id: 2, message: "How are you?" },
-        { id: 3, message: "Wazzaapp" },
+        { id: 3, message: "Hey, come here" },
       ],
       newMessage: "Good work",
 

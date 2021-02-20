@@ -1,5 +1,6 @@
 .mainNavbar {
   grid-area: nav;
+  background-color: #25af98;
 }
 
 .mainNavbar ul {
@@ -13,6 +14,7 @@
   text-decoration: none;
   padding: 10px;
   display: block;
+  width: 100%;
 }
 
 .mainNavbar .navList {
@@ -21,6 +23,6 @@
 }
 
 .mainNavbar .active {
-  color: gold;
+  color: white;
 }
 /*# sourceMappingURL=Navbar.module.css.map */

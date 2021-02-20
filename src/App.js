@@ -3,7 +3,7 @@ import Navbar from "./Components/Navbar/Navbar";
 import Profile from "./Components/Profile/Profile";
 import Messages from "./Components/Messages/Messages";
 import style from "./App.module.scss";
-import { Route, Switch, BrowserRouter } from "react-router-dom";
+import { Route, BrowserRouter } from "react-router-dom";
 
 function App(props) {
   return (

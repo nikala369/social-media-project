@@ -1,23 +1,24 @@
 .mainNavbar {
   grid-area: nav;
+    background-color: rgb(37, 175, 152);
   ul {
-          list-style-type: none;
-          padding: 5px;
-          
-          display: block;
-          float: left;
+    list-style-type: none;
+    padding: 5px;
+    display: block;
+    float: left;
   }
   li {
     text-decoration: none;
     padding: 10px;
     display: block;
+    width: 100%;
   }
   .navList {
     text-decoration: none;
     color: rgb(0, 0, 0);
+    
   }
   .active {
-    color: gold;
+    color: rgb(255, 255, 255);
   }
-
 }
