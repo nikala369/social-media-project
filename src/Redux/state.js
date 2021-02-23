@@ -1,3 +1,8 @@
+const ADD_POST = "ADD-POST";
+const UPDATE_NEW_POST_TEXT = "UPDATE-NEW-POST-TEXT";
+const SEND_MESSAGE = "ADD-MESSAGE";
+const UPDATE_NEW_MESSAGE = "UPDATE-NEW-MESSAGE";
+
 // BLL REDUX
 let store = {
   _state: {
@@ -16,7 +21,7 @@ let store = {
         { id: 2, message: "How are you?" },
         { id: 3, message: "Hey, come here" },
       ],
-      newMessage: "Good work",
+      newMessageText: "",
 
       dialogsData: [
         { id: 1, name: "David" },
@@ -42,19 +47,9 @@ let store = {
     this._callSubscriber = observer;
   },
 
-  // Sending message.
-  sendMessage() {
-    let newMessage = {
-      id: 4,
-      message: this._state.messagesPage.newMessage,
-    };
-    this._state.messagesPage.messagesData.push(newMessage);
-    this._state.messagesPage.newMessage = "";
-    this._callSubscriber(this._state);
-  },
   dispatch(action) {
     // { type: 'ADD-POST' in UI}
-    if (action.type === "ADD-POST") {
+    if (action.type === ADD_POST) {
       let newPost = {
         id: 4,
         message: this._state.profilePage.newPostText,
@@ -63,12 +58,41 @@ let store = {
       this._state.profilePage.postData.push(newPost);
       this._state.profilePage.newPostText = "";
       this._callSubscriber(this._state);
-    } else if (action.type === "UPDATE-NEW-POST-TEXT") {
+    } else if (action.type === UPDATE_NEW_POST_TEXT) {
       this._state.profilePage.newPostText = action.newText;
+      this._callSubscriber(this._state);
+
+
+    } else if (action.type === SEND_MESSAGE) {
+      let newMessage = {
+        id: 4,
+        message: this._state.messagesPage.newMessageText,
+      };
+      this._state.messagesPage.messagesData.push(newMessage);
+      this._state.messagesPage.newMessageText = "";
+      this._callSubscriber(this._state); 
+    } else if (action.type === UPDATE_NEW_MESSAGE) {
+      this._state.messagesPage.newMessageText = action.newMessageDialogs;
       this._callSubscriber(this._state);
     }
   },
 };
+
+
+// ACTION CREATORS FOR UI use
+// Profile
+export const addPostActionCreator = () => ({ type: ADD_POST });
+export const updateNewPostTextActionCreator = (text) => ({
+  type: UPDATE_NEW_POST_TEXT,
+  newText: text,
+});
+
+//Messages
+export const sendMessageActionCreator = () => ({ type: SEND_MESSAGE });
+export const updateMessageActionCreator = (textFromInput) => ({
+  type: UPDATE_NEW_MESSAGE,
+  newMessageDialogs: textFromInput,
+});
 
 export default store;
 window.store = store;

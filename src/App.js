@@ -13,18 +13,19 @@ function App(props) {
         <Navbar />
         <Route
           path="/Profile"
-          render={() => <Profile
-            profilePage={props.state.profilePage}
-            dispatch={props.dispatch}
-          />}
+          render={() => (
+            <Profile
+              profilePage={props.state.profilePage}
+              dispatch={props.dispatch}
+            />
+          )}
         />
         <Route
           path="/Dialogs"
           render={() => (
             <Messages
-              profilePage={props.state.profilePage}
+              dispatch={props.dispatch}
               state={props.state.messagesPage}
-              messagesPage={props.state.messagesPage}
             />
           )}
         />
